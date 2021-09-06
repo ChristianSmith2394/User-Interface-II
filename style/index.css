@@ -46,9 +46,6 @@ caption, th, td {
 
 /* Header Styles */
 
-nav {
-
-}
 
 header {
     background-color:rgb(22, 95, 230)
@@ -66,6 +63,9 @@ a {
     border: 2px solid rgb(22, 95, 230);
     text-decoration: none;
     color: #FFC300;
+    border-radius: 15px;
+    padding: 0 1%;
+    background-color: #023e8a;
 }
 
 h1 {
@@ -109,6 +109,7 @@ h1 {
 }
 
 
+
 /* Car Section */
 
 .cars {
@@ -140,7 +141,7 @@ h1 {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     margin-top: 2%;
     background-color:rgb(22, 95, 230)
 }
@@ -154,4 +155,61 @@ h1 {
     border: solid blue 1px;
     font-size: 130%;
     padding: 2%;
+}
+
+button {
+    color: #FFC300;
+    background-color: #023e8a;
+    border: 2px solid rgb(22, 95, 230);
+    border-radius: 15px;
+    padding: 2% 3%;
+}
+
+
+/* Media queries */
+
+/* Tablet */
+@media (max-width:800px) {
+    header { 
+        text-align: center; 
+    }
+    .bar {
+        justify-content: center;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .large {
+        width: auto;
+        padding: 0 10%;
+        margin-top: 3%;
+    }
+    .all {
+        text-align: center;
+    }
+    
+
+
+
+/* Phone */
+@media (max-width:500px) {
+    body {
+        line-height: 1.2;
+        font-size: 65%;
+    }
+    nav a {
+        flex-direction: column;
+    }
+    .exotic {
+        width: 45%;
+    }
+    .exotic img {
+        height: 20vh;
+    }
+    .bar {
+        flex-direction: column;
+        max-width:35%;
+        margin: 0 auto;
+    }
+    
 }
